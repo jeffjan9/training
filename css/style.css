@@ -1,0 +1,115 @@
+.section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid: 150px / auto auto auto;
+    grid-gap: 10px;
+}
+
+.section1 #div1 {
+    background-color: red;
+    overflow: auto;
+    grid-column-start: 0;
+    grid-column-end: 2;
+    
+}
+
+.section1 #div2 {
+    background-color: blue;
+    overflow: auto;
+    grid-column: span2;
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
+
+.section1 #div3 {
+    background-color: greenyellow;
+    overflow: auto;
+    grid-column-start: 0;
+    grid-column-end: 2;
+    grid-row-start: 0;
+    grid-row-end: -1;
+}
+
+.section1 #div4 {
+    background-color: green;
+    overflow: auto;
+}
+
+
+.section1 #div5 {
+    background-color: pink;
+    overflow: auto;
+}
+
+.section1 #div6 {
+    background-color: grey;
+    overflow: auto;
+}
+
+.section2 {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+        padding: 10px;
+      }
+      
+      .grid-item {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 24px;
+      }
+      
+@media (max-width: 1024px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      gap: 5px;
+    }
+  }
+}
+
+.section3 
+    .div1 {
+        width: 50%;
+        position: relative;
+    }
+    
+    .img_1 {
+     position: absolute;
+     top: 0;
+     right: 0;
+     z-index: 1;
+     width: 150px;
+    }
+      
+      .image-container img {
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .image-container:hover img {
+        transform: scale(1.2);
+}
+
+.section4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    .red-box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+}
