@@ -150,21 +150,25 @@
     width: 100%;
   }
   
+.section5
   thead {
     background-color: #3498db;
     color: white;
   }
   
+  .section5
   th, td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
   }
   
+  .section5
   tbody tr:nth-child(even) {
     background-color: #f2f2f2;
   }
   
+  .section5
   tbody tr:hover {
     background-color: #e0e0e0;
   }
